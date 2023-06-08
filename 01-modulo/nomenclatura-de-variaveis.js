@@ -9,3 +9,9 @@ const userFirstInputNumber = 10; // Especificando o tipo de dado no nome da vari
 const userSecondInputNumber = 10;
 
 console.log(userFirstInputNumber + userSecondInputNumber);
+
+// Booleanos
+// Utilize has e is como prefixos dos nomes das variáveis que guardarão valores booleanos.
+// A própria API do JavaScript utiliza essa convenção para nomear funções e atributos. Veja o exemplo:
+document.querySelector('input').hasAttribute('value');
+
