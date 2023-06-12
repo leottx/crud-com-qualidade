@@ -1,0 +1,15 @@
+{
+  "name": "02-modulo",
+  "version": "1.0.0",
+  "description": "Projeto criando um CRUD com Qualidade",
+  "main": "crud.js",
+  "scripts": {
+    "dev": "nodemon ./crud.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
