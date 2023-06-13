@@ -1,1 +1,19 @@
-New file update
+{
+  "todos": [
+    {
+      "date": "2023-06-13T13:17:34.341Z",
+      "content": "First file",
+      "done": false
+    },
+    {
+      "date": "2023-06-13T13:17:34.342Z",
+      "content": "Second file",
+      "done": false
+    },
+    {
+      "date": "2023-06-13T13:17:34.342Z",
+      "content": "Third file",
+      "done": false
+    }
+  ]
+}
