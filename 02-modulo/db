@@ -1,21 +1,15 @@
 {
   "todos": [
     {
-      "id": "8abab9b4-c25d-4be0-b15b-b3d1bd885cc8",
-      "date": "2023-06-28T13:49:52.187Z",
+      "id": "d8fd77ec-5b52-41b5-af4c-bf871e4a84b2",
+      "date": "2023-06-28T14:24:19.119Z",
       "content": "First file",
       "done": false
     },
     {
-      "id": "f3bbb5f7-7358-47de-b8b1-5b3389d87bae",
-      "date": "2023-06-28T13:49:52.188Z",
-      "content": "Second file",
-      "done": false
-    },
-    {
-      "id": "bbb9e6e8-fcd7-4330-a4cf-d57b87d42463",
-      "date": "2023-06-28T13:49:52.188Z",
-      "content": "New for the third todo",
+      "id": "c85134ff-4694-4af7-bb5b-d9b1a50af26b",
+      "date": "2023-06-28T14:24:19.120Z",
+      "content": "New content for the third todo",
       "done": false
     }
   ]

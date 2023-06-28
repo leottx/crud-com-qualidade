@@ -4,8 +4,10 @@ import { v4 as uuid } from "uuid";
 
 const DB_FILE_PATH = "./db";
 
+type UUID = string;
+
 interface Todo {
-  id: string;
+  id: UUID;
   date: string;
   content: string;
   done: boolean;
@@ -39,7 +41,7 @@ function read(): Todo[] {
   return db.todos;
 }
 
-function updateContentByID(id: string, partialTodo: Partial<Todo>) {
+function updateContentByID(id: UUID, partialTodo: Partial<Todo>) {
   const todos = read();
 
   const todo = todos.find((todo) => todo.id === id);
@@ -55,12 +57,31 @@ function clearDB() {
   fs.writeFileSync(DB_FILE_PATH, "");
 }
 
+function deleteByID(id: UUID) {
+  const todos = read();
+
+  const todosWithoutOne = todos.filter((todo) => {
+    if (id === todo.id) {
+      return false;
+    }
+
+    return true;
+  });
+
+  fs.writeFileSync(
+    DB_FILE_PATH,
+    JSON.stringify({ todos: todosWithoutOne }, null, 2)
+  );
+}
+
 clearDB();
 
 create("First file");
-create("Second file");
+const secondTodo = create("Second file");
+
+deleteByID(secondTodo.id);
 
 const thirdTodo = create("Third file");
 
 // Todo função de update de um CRUD recebe QUEM será atualizado e O QUE será o novo valor.
-updateContentByID(thirdTodo.id, { content: "New for the third todo" });
+updateContentByID(thirdTodo.id, { content: "New content for the third todo" });
