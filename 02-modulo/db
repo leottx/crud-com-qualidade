@@ -1,0 +1,16 @@
+{
+  "todos": [
+    {
+      "id": "d8fd77ec-5b52-41b5-af4c-bf871e4a84b2",
+      "date": "2023-06-28T14:24:19.119Z",
+      "content": "First file",
+      "done": false
+    },
+    {
+      "id": "c85134ff-4694-4af7-bb5b-d9b1a50af26b",
+      "date": "2023-06-28T14:24:19.120Z",
+      "content": "New content for the third todo",
+      "done": false
+    }
+  ]
+}
