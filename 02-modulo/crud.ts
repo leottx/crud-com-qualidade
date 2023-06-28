@@ -39,7 +39,7 @@ function read(): Todo[] {
   return db.todos;
 }
 
-function update(id: string, partialTodo: Partial<Todo>) {
+function updateContentByID(id: string, partialTodo: Partial<Todo>) {
   const todos = read();
 
   const todo = todos.find((todo) => todo.id === id);
@@ -63,4 +63,4 @@ create("Second file");
 const thirdTodo = create("Third file");
 
 // Todo função de update de um CRUD recebe QUEM será atualizado e O QUE será o novo valor.
-update(thirdTodo.id, { content: "New for the third todo" });
+updateContentByID(thirdTodo.id, { content: "New for the third todo" });
