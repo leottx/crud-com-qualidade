@@ -1,4 +1,6 @@
-import { GlobalStyles } from "../src/theme/GlobalStyles";
+import React from "react";
+
+import { GlobalStyles } from "@ui/theme/GlobalStyles";
 
 const bg = "/bg.jpeg";
 
